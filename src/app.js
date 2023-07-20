@@ -19,7 +19,7 @@ app.get('/products', async (req, res) => {
         return res.json(readProduct)
     }
 
-    res.json(await productLimit)
+    res.json(productLimit)
 })
 
 app.get('/products/:pid', async (req, res) => {
